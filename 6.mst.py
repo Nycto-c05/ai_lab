@@ -88,4 +88,3 @@ if __name__ == '__main__':
 	g.primMST()
 
 
-# Contributed by Divyanshu Mehta
