@@ -72,11 +72,17 @@ def solveNQUtil(board, col):
 # solutions, this function prints one of the
 # feasible solutions.
 def solveNQ():
-	board = [ [0, 0, 0, 0],
-			[0, 0, 0, 0],
-			[0, 0, 0, 0],
-			[0, 0, 0, 0]
-			]
+	
+
+	board = []
+	for i in range(N):
+		row = []
+		for j in range(N):
+			row.append(0)
+		board.append(row)
+
+# Now, the 'board' is an N x N list initialized with zeros
+
 
 	if solveNQUtil(board, 0) == False:
 		print ("Solution does not exist")
@@ -88,3 +94,4 @@ def solveNQ():
 # driver program to test above function
 solveNQ()
 
+# This code is contributed by Divyanshu Mehta
